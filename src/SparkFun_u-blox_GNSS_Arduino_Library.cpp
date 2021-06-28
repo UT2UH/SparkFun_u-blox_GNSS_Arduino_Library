@@ -91,7 +91,7 @@ void SFE_UBLOX_GNSS::end(void)
     delete[] packetUBXNAVTIMELS;
     packetUBXNAVTIMELS = NULL; // Redundant?
   }
-  
+
   if (packetUBXNAVPOSECEF != NULL)
   {
     if (packetUBXNAVPOSECEF->callbackData != NULL)
@@ -99,7 +99,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXNAVPOSECEF->callbackData;
     }
     delete[] packetUBXNAVPOSECEF;
-    packetUBXNAVPOSECEF = NULL; // Redundant?  
+    packetUBXNAVPOSECEF = NULL; // Redundant?
   }
 
   if (packetUBXNAVSTATUS != NULL)
@@ -109,7 +109,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXNAVSTATUS->callbackData;
     }
     delete[] packetUBXNAVSTATUS;
-    packetUBXNAVSTATUS = NULL; // Redundant?  
+    packetUBXNAVSTATUS = NULL; // Redundant?
   }
 
   if (packetUBXNAVDOP != NULL)
@@ -119,7 +119,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXNAVDOP->callbackData;
     }
     delete[] packetUBXNAVDOP;
-    packetUBXNAVDOP = NULL; // Redundant?  
+    packetUBXNAVDOP = NULL; // Redundant?
   }
 
   if (packetUBXNAVATT != NULL)
@@ -129,7 +129,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXNAVATT->callbackData;
     }
     delete[] packetUBXNAVATT;
-    packetUBXNAVATT = NULL; // Redundant?  
+    packetUBXNAVATT = NULL; // Redundant?
   }
 
   if (packetUBXNAVPVT != NULL)
@@ -143,7 +143,7 @@ void SFE_UBLOX_GNSS::end(void)
       }
     }
     delete[] packetUBXNAVPVT;
-    packetUBXNAVPVT = NULL; // Redundant?  
+    packetUBXNAVPVT = NULL; // Redundant?
     if (_printDebug == true)
     {
       _debugSerial->println(F("end: packetUBXNAVPVT has been deleted"));
@@ -157,7 +157,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXNAVODO->callbackData;
     }
     delete[] packetUBXNAVODO;
-    packetUBXNAVODO = NULL; // Redundant?  
+    packetUBXNAVODO = NULL; // Redundant?
   }
 
   if (packetUBXNAVVELECEF != NULL)
@@ -167,7 +167,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXNAVVELECEF->callbackData;
     }
     delete[] packetUBXNAVVELECEF;
-    packetUBXNAVVELECEF = NULL; // Redundant?  
+    packetUBXNAVVELECEF = NULL; // Redundant?
   }
 
   if (packetUBXNAVVELNED != NULL)
@@ -177,7 +177,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXNAVVELNED->callbackData;
     }
     delete[] packetUBXNAVVELNED;
-    packetUBXNAVVELNED = NULL; // Redundant?  
+    packetUBXNAVVELNED = NULL; // Redundant?
   }
 
   if (packetUBXNAVHPPOSECEF != NULL)
@@ -187,7 +187,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXNAVHPPOSECEF->callbackData;
     }
     delete[] packetUBXNAVHPPOSECEF;
-    packetUBXNAVHPPOSECEF = NULL; // Redundant?  
+    packetUBXNAVHPPOSECEF = NULL; // Redundant?
   }
 
   if (packetUBXNAVHPPOSLLH != NULL)
@@ -197,7 +197,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXNAVHPPOSLLH->callbackData;
     }
     delete[] packetUBXNAVHPPOSLLH;
-    packetUBXNAVHPPOSLLH = NULL; // Redundant?  
+    packetUBXNAVHPPOSLLH = NULL; // Redundant?
   }
 
   if (packetUBXNAVCLOCK != NULL)
@@ -207,7 +207,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXNAVCLOCK->callbackData;
     }
     delete[] packetUBXNAVCLOCK;
-    packetUBXNAVCLOCK = NULL; // Redundant?  
+    packetUBXNAVCLOCK = NULL; // Redundant?
   }
 
   if (packetUBXNAVSVIN != NULL)
@@ -217,7 +217,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXNAVSVIN->callbackData;
     }
     delete[] packetUBXNAVSVIN;
-    packetUBXNAVSVIN = NULL; // Redundant?  
+    packetUBXNAVSVIN = NULL; // Redundant?
   }
 
   if (packetUBXNAVRELPOSNED != NULL)
@@ -227,7 +227,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXNAVRELPOSNED->callbackData;
     }
     delete[] packetUBXNAVRELPOSNED;
-    packetUBXNAVRELPOSNED = NULL; // Redundant?  
+    packetUBXNAVRELPOSNED = NULL; // Redundant?
   }
 
   if (packetUBXRXMSFRBX != NULL)
@@ -237,7 +237,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXRXMSFRBX->callbackData;
     }
     delete[] packetUBXRXMSFRBX;
-    packetUBXRXMSFRBX = NULL; // Redundant?  
+    packetUBXRXMSFRBX = NULL; // Redundant?
   }
 
   if (packetUBXRXMRAWX != NULL)
@@ -247,7 +247,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXRXMRAWX->callbackData;
     }
     delete[] packetUBXRXMRAWX;
-    packetUBXRXMRAWX = NULL; // Redundant?  
+    packetUBXRXMRAWX = NULL; // Redundant?
   }
 
   if (packetUBXCFGRATE != NULL)
@@ -257,7 +257,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXCFGRATE->callbackData;
     }
     delete[] packetUBXCFGRATE;
-    packetUBXCFGRATE = NULL; // Redundant?  
+    packetUBXCFGRATE = NULL; // Redundant?
   }
 
   if (packetUBXTIMTM2 != NULL)
@@ -267,7 +267,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXTIMTM2->callbackData;
     }
     delete[] packetUBXTIMTM2;
-    packetUBXTIMTM2 = NULL; // Redundant?  
+    packetUBXTIMTM2 = NULL; // Redundant?
   }
 
   if (packetUBXESFALG != NULL)
@@ -277,7 +277,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXESFALG->callbackData;
     }
     delete[] packetUBXESFALG;
-    packetUBXESFALG = NULL; // Redundant?  
+    packetUBXESFALG = NULL; // Redundant?
   }
 
   if (packetUBXESFSTATUS != NULL)
@@ -287,7 +287,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXESFSTATUS->callbackData;
     }
     delete[] packetUBXESFSTATUS;
-    packetUBXESFSTATUS = NULL; // Redundant?  
+    packetUBXESFSTATUS = NULL; // Redundant?
   }
 
   if (packetUBXESFINS != NULL)
@@ -297,7 +297,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXESFINS->callbackData;
     }
     delete[] packetUBXESFINS;
-    packetUBXESFINS = NULL; // Redundant?  
+    packetUBXESFINS = NULL; // Redundant?
   }
 
   if (packetUBXESFMEAS != NULL)
@@ -307,7 +307,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXESFMEAS->callbackData;
     }
     delete[] packetUBXESFMEAS;
-    packetUBXESFMEAS = NULL; // Redundant?  
+    packetUBXESFMEAS = NULL; // Redundant?
   }
 
   if (packetUBXESFRAW != NULL)
@@ -317,7 +317,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXESFRAW->callbackData;
     }
     delete[] packetUBXESFRAW;
-    packetUBXESFRAW = NULL; // Redundant?  
+    packetUBXESFRAW = NULL; // Redundant?
   }
 
   if (packetUBXHNRATT != NULL)
@@ -327,7 +327,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXHNRATT->callbackData;
     }
     delete[] packetUBXHNRATT;
-    packetUBXHNRATT = NULL; // Redundant?  
+    packetUBXHNRATT = NULL; // Redundant?
   }
 
   if (packetUBXHNRINS != NULL)
@@ -337,7 +337,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXHNRINS->callbackData;
     }
     delete[] packetUBXHNRINS;
-    packetUBXHNRINS = NULL; // Redundant?  
+    packetUBXHNRINS = NULL; // Redundant?
   }
 
   if (packetUBXHNRPVT != NULL)
@@ -347,7 +347,7 @@ void SFE_UBLOX_GNSS::end(void)
       delete[] packetUBXHNRPVT->callbackData;
     }
     delete[] packetUBXHNRPVT;
-    packetUBXHNRPVT = NULL; // Redundant?  
+    packetUBXHNRPVT = NULL; // Redundant?
   }
 
 }
@@ -451,6 +451,38 @@ boolean SFE_UBLOX_GNSS::begin(Stream &serialPort)
   return (connected);
 }
 
+// Initialize for SPI
+boolean SFE_UBLOX_GNSS::begin(SPIClass &spiPort, uint8_t csPin, uint32_t spiSpeed)
+{
+  commType = COMM_TYPE_SPI;
+  _spiPort = &spiPort;
+  _csPin = csPin;
+  _spiSpeed = spiSpeed;
+  // Initialize the chip select pin
+  pinMode(_csPin, OUTPUT);
+  digitalWrite(_csPin, HIGH);
+  //New in v2.0: allocate memory for the packetCfg payload here - if required. (The user may have called setPacketCfgPayloadSize already)
+  if (packetCfgPayloadSize == 0)
+    setPacketCfgPayloadSize(MAX_PAYLOAD_SIZE);
+  Serial.println("Creating buffer");
+  createFileBuffer();
+  boolean connected = isConnected();
+  if (!connected)
+    connected = isConnected();
+
+  if (!connected)
+    connected = isConnected();
+
+  // Initialize/clear the SPI buffer - fill it with 0xFF as this is what is received from the UBLOX module if there's no data to be processed
+  for (uint8_t i = 0; i < 20; i++) 
+  {
+    spiBuffer[i] = 0xFF;
+  }
+
+  return (connected);
+}
+
+
 // Allow the user to change I2C polling wait (the minimum interval between I2C data requests - to avoid pounding the bus)
 // i2cPollingWait defaults to 100ms and is adjusted automatically when setNavigationFrequency()
 // or setHNRNavigationRate() are called. But if the user is using callbacks, it might be advantageous
@@ -471,6 +503,19 @@ void SFE_UBLOX_GNSS::setI2CTransactionSize(uint8_t transactionSize)
 uint8_t SFE_UBLOX_GNSS::getI2CTransactionSize(void)
 {
   return (i2cTransactionSize);
+}
+
+//Sets the global size for the SPI buffer/transactions.
+//Call this before begin()!
+//Note: if the buffer size is too small, incoming characters may be lost if the message sent
+//is larger than this buffer. If too big, you may run out of SRAM on constrained architectures!
+void SFE_UBLOX_GNSS::setSpiTransactionSize(uint8_t transactionSize)
+{
+  spiTransactionSize = transactionSize;
+}
+uint8_t SFE_UBLOX_GNSS::getSpiTransactionSize(void)
+{
+  return (spiTransactionSize);
 }
 
 //Returns true if I2C device ack's
@@ -598,6 +643,8 @@ boolean SFE_UBLOX_GNSS::checkUbloxInternal(ubxPacket *incomingUBX, uint8_t reque
     return (checkUbloxI2C(incomingUBX, requestedClass, requestedID));
   else if (commType == COMM_TYPE_SERIAL)
     return (checkUbloxSerial(incomingUBX, requestedClass, requestedID));
+  else if (commType == COMM_TYPE_SPI)
+    return (checkUbloxSpi(incomingUBX, requestedClass, requestedID));
   return false;
 }
 
@@ -754,6 +801,32 @@ boolean SFE_UBLOX_GNSS::checkUbloxSerial(ubxPacket *incomingUBX, uint8_t request
   return (true);
 
 } //end checkUbloxSerial()
+
+
+//Checks SPI for data, passing any new bytes to process()
+boolean SFE_UBLOX_GNSS::checkUbloxSpi(ubxPacket *incomingUBX, uint8_t requestedClass, uint8_t requestedID)
+{
+  // Process the contents of the SPI buffer if not empty!  
+  for (uint8_t i = 0; i < spiBufferIndex; i++) {
+    process(spiBuffer[i], incomingUBX, requestedClass, requestedID);        
+  }
+  spiBufferIndex = 0;
+   
+  SPISettings settingsA(_spiSpeed, MSBFIRST, SPI_MODE0);  
+  _spiPort->beginTransaction(settingsA);
+  digitalWrite(_csPin, LOW);
+  uint8_t byteReturned = _spiPort->transfer(0x0A);
+  while (byteReturned != 0xFF || currentSentence != NONE)
+  {       
+    process(byteReturned, incomingUBX, requestedClass, requestedID);
+    byteReturned = _spiPort->transfer(0x0A);
+  }
+  digitalWrite(_csPin, HIGH);
+  _spiPort->endTransaction();
+  return (true);
+
+} //end checkUbloxSpi()
+
 
 //PRIVATE: Check if we have storage allocated for an incoming "automatic" message
 boolean SFE_UBLOX_GNSS::checkAutomatic(uint8_t Class, uint8_t ID)
@@ -1435,7 +1508,7 @@ void SFE_UBLOX_GNSS::processRTCMframe(uint8_t incoming)
 //This function is called for each byte of an RTCM frame
 //Ths user can overwrite this function and process the RTCM frame as they please
 //Bytes can be piped to Serial or other interface. The consumer could be a radio or the internet (Ntrip broadcaster)
-void SFE_UBLOX_GNSS::processRTCM(uint8_t incoming)
+void SFE_UBLOX_GNSS::processRTCM(uint8_t incoming) // IGNORE COMPILER WARNING unused parameter 'incoming'
 {
   //Radio.sendReliable((String)incoming); //An example of passing this byte to a radio
 
@@ -1458,7 +1531,7 @@ void SFE_UBLOX_GNSS::processUBX(uint8_t incoming, ubxPacket *incomingUBX, uint8_
     //If incomingUBX is a user-defined custom packet, then the payload size could be different to packetCfgPayloadSize.
     //TO DO: update this to prevent an overrun when receiving an automatic message
     //       and the incomingUBX payload size is smaller than packetCfgPayloadSize.
-  size_t maximum_payload_size;
+  uint16_t maximum_payload_size;
   if (activePacketBuffer == SFE_UBLOX_PACKET_PACKETCFG)
     maximum_payload_size = packetCfgPayloadSize;
   else if (activePacketBuffer == SFE_UBLOX_PACKET_PACKETAUTO)
@@ -2404,7 +2477,7 @@ void SFE_UBLOX_GNSS::processUBXpacket(ubxPacket *msg)
         packetUBXESFMEAS->data.timeTag = extractLong(msg, 0);
         packetUBXESFMEAS->data.flags.all = extractInt(msg, 4);
         packetUBXESFMEAS->data.id = extractInt(msg, 6);
-        for (int i = 0; (i < DEF_NUM_SENS) && (i < packetUBXESFMEAS->data.flags.bits.numMeas)
+        for (uint16_t i = 0; (i < DEF_NUM_SENS) && (i < packetUBXESFMEAS->data.flags.bits.numMeas)
           && ((i * 4) < (msg->len - 8)); i++)
         {
           packetUBXESFMEAS->data.data[i].data.all = extractLong(msg, 8 + (i * 4));
@@ -2435,10 +2508,10 @@ void SFE_UBLOX_GNSS::processUBXpacket(ubxPacket *msg)
       //Parse various byte fields into storage - but only if we have memory allocated for it
       if (packetUBXESFRAW != NULL)
       {
-        for (int i = 0; (i < DEF_NUM_SENS) && ((i * 8) < (msg->len - 4)); i++)
+        for (uint16_t i = 0; (i < DEF_NUM_SENS) && ((i * 8) < (msg->len - 4)); i++)
         {
-          packetUBXESFRAW->data.data[i].data.all = extractLong(msg, 8 + (i * 8));
-          packetUBXESFRAW->data.data[i].sTag = extractLong(msg, 8 + (i * 8) + 4);
+          packetUBXESFRAW->data.data[i].data.all = extractLong(msg, 4 + (i * 8));
+          packetUBXESFRAW->data.data[i].sTag = extractLong(msg, 8 + (i * 8));
         }
 
         //Mark all datums as fresh (not read before)
@@ -2468,7 +2541,7 @@ void SFE_UBLOX_GNSS::processUBXpacket(ubxPacket *msg)
         packetUBXESFSTATUS->data.version = extractByte(msg, 4);
         packetUBXESFSTATUS->data.fusionMode = extractByte(msg, 12);
         packetUBXESFSTATUS->data.numSens = extractByte(msg, 15);
-        for (int i = 0; (i < DEF_NUM_SENS) && (i < packetUBXESFSTATUS->data.numSens)
+        for (uint16_t i = 0; (i < DEF_NUM_SENS) && (i < packetUBXESFSTATUS->data.numSens)
           && ((i * 4) < (msg->len - 16)); i++)
         {
           packetUBXESFSTATUS->data.status[i].sensStatus1.all = extractByte(msg, 16 + (i * 4) + 0);
@@ -2675,6 +2748,10 @@ sfe_ublox_status_e SFE_UBLOX_GNSS::sendCommand(ubxPacket *outgoingUBX, uint16_t 
   {
     sendSerialCommand(outgoingUBX);
   }
+  else if (commType == COMM_TYPE_SPI)
+  {
+    sendSpiCommand(outgoingUBX);
+  }
 
   if (maxWait > 0)
   {
@@ -2771,7 +2848,7 @@ void SFE_UBLOX_GNSS::sendSerialCommand(ubxPacket *outgoingUBX)
   _serialPort->write(outgoingUBX->len >> 8);   //MSB
 
   //Write payload.
-  for (int i = 0; i < outgoingUBX->len; i++)
+  for (uint16_t i = 0; i < outgoingUBX->len; i++)
   {
     _serialPort->write(outgoingUBX->payload[i]);
   }
@@ -2779,6 +2856,71 @@ void SFE_UBLOX_GNSS::sendSerialCommand(ubxPacket *outgoingUBX)
   //Write checksum
   _serialPort->write(outgoingUBX->checksumA);
   _serialPort->write(outgoingUBX->checksumB);
+}
+
+
+// Transfer a byte to SPI. Also capture any bytes received from the UBLOX device during sending and capture them in a small buffer so that
+// they can be processed later with process
+void SFE_UBLOX_GNSS::spiTransfer(uint8_t byteToTransfer) 
+{
+  uint8_t returnedByte = _spiPort->transfer(byteToTransfer);
+  if ((spiBufferIndex < getSpiTransactionSize()) && (returnedByte != 0xFF || currentSentence != NONE))
+  {
+    spiBuffer[spiBufferIndex] = returnedByte;
+    spiBufferIndex++;
+  }
+}
+
+// Send a command via SPI
+void SFE_UBLOX_GNSS::sendSpiCommand(ubxPacket *outgoingUBX)
+{
+  if (spiBuffer == NULL) //Memory has not yet been allocated - so use new
+  {
+    spiBuffer = new uint8_t[getSpiTransactionSize()];
+  }
+  
+  if (spiBuffer == NULL) { 
+    if ((_printDebug == true) || (_printLimitedDebug == true)) // This is important. Print this if doing limited debugging
+    {
+      _debugSerial->print(F("sendSpiCommand: memory allocation failed for SPI Buffer!"));      
+    }
+  }
+  
+  // Start at the beginning of the SPI buffer
+  spiBufferIndex = 0;
+
+  SPISettings settingsA(_spiSpeed, MSBFIRST, SPI_MODE0);
+  _spiPort->beginTransaction(settingsA);
+  digitalWrite(_csPin, LOW);
+  //Write header bytes
+  spiTransfer(UBX_SYNCH_1); //μ - oh ublox, you're funny. I will call you micro-blox from now on.
+  if (_printDebug) _debugSerial->printf("%x ", UBX_SYNCH_1);
+  spiTransfer(UBX_SYNCH_2); //b
+  if (_printDebug) _debugSerial->printf("%x ", UBX_SYNCH_2);
+
+  spiTransfer(outgoingUBX->cls);
+  if (_printDebug) _debugSerial->printf("%x ", outgoingUBX->cls);
+  spiTransfer(outgoingUBX->id);
+  if (_printDebug) _debugSerial->printf("%x ", outgoingUBX->id);
+  spiTransfer(outgoingUBX->len & 0xFF); //LSB
+  if (_printDebug) _debugSerial->printf("%x ", outgoingUBX->len & 0xFF);
+  spiTransfer(outgoingUBX->len >> 8);
+  if (_printDebug) _debugSerial->printf("%x ", outgoingUBX->len >> 8);
+
+  //Write payload.
+  for (uint16_t i = 0; i < outgoingUBX->len; i++)
+  {
+    spiTransfer(outgoingUBX->payload[i]);
+    if (_printDebug) _debugSerial->printf("%x ", outgoingUBX->payload[i]);
+  }
+
+  //Write checksum
+  spiTransfer(outgoingUBX->checksumA);
+  if (_printDebug) _debugSerial->printf("%x ", outgoingUBX->checksumA);
+  spiTransfer(outgoingUBX->checksumB);
+  if (_printDebug) _debugSerial->printf("%x \n", outgoingUBX->checksumB);
+  digitalWrite(_csPin, HIGH);
+  _spiPort->endTransaction();
 }
 
 //Pretty prints the current ubxPacket
@@ -2823,7 +2965,7 @@ void SFE_UBLOX_GNSS::printPacket(ubxPacket *packet, boolean alwaysPrintPayload)
     {
       _debugSerial->print(F(" Payload:"));
 
-      for (int x = 0; x < packet->len; x++)
+      for (uint16_t x = 0; x < packet->len; x++)
       {
         _debugSerial->print(F(" "));
         _debugSerial->print(packet->payload[x], HEX);
@@ -3394,7 +3536,9 @@ void SFE_UBLOX_GNSS::checkCallbacks(void)
 // Push (e.g.) RTCM data directly to the module
 // Returns true if all numDataBytes were pushed successfully
 // Warning: this function does not check that the data is valid. It is the user's responsibility to ensure the data is valid before pushing.
-boolean SFE_UBLOX_GNSS::pushRawData(uint8_t *dataBytes, size_t numDataBytes)
+// Default to using a restart between transmissions. But processors like ESP32 seem to need a stop (#30). Set stop to true to use a stop instead.
+// On processors like the ESP32, you can use setI2CTransactionSize to increase the size of each transmission - to e.g. 128 bytes
+boolean SFE_UBLOX_GNSS::pushRawData(uint8_t *dataBytes, size_t numDataBytes, boolean stop)
 {
   if (commType == COMM_TYPE_SERIAL)
   {
@@ -3425,12 +3569,12 @@ boolean SFE_UBLOX_GNSS::pushRawData(uint8_t *dataBytes, size_t numDataBytes)
 
       if (bytesLeftToWrite > 0)
       {
-        if (_i2cPort->endTransmission(false) != 0) //Send a restart command. Do not release bus.
-          return (false);                          //Sensor did not ACK
+        if (_i2cPort->endTransmission(stop) != 0) //Send a restart or stop command
+          return (false);                         //Sensor did not ACK
       }
       else
       {
-        if (_i2cPort->endTransmission() != 0) //We're done. Release bus.
+        if (_i2cPort->endTransmission() != 0) //We're done. Release bus. Always use a stop here
           return (false);                     //Sensor did not ACK
       }
     }
@@ -9709,7 +9853,7 @@ uint32_t SFE_UBLOX_GNSS::getUnixEpoch(uint16_t maxWait)
   packetUBXNAVPVT->moduleQueried.moduleQueried1.bits.sec = false;
   packetUBXNAVPVT->moduleQueried.moduleQueried1.bits.all = false;
   // assemble time elements into time_t - credits to Thomas Roell @ https://github.com/GrumpyOldPizza
-  uint32_t t = ((((((((uint32_t)packetUBXNAVPVT->data.year - 1970) * 365) + ((((uint32_t)packetUBXNAVPVT->data.year - 1970) + 3) / 4)) + 
+  uint32_t t = ((((((((uint32_t)packetUBXNAVPVT->data.year - 1970) * 365) + ((((uint32_t)packetUBXNAVPVT->data.year - 1970) + 3) / 4)) +
                             DAYS_SINCE_MONTH[((uint32_t)packetUBXNAVPVT->data.year - 1970) & 3][(uint32_t)packetUBXNAVPVT->data.month] +
                           ((uint32_t)packetUBXNAVPVT->data.day - 1)) * 24 +
                         (uint32_t)packetUBXNAVPVT->data.hour) * 60 +
@@ -9736,7 +9880,7 @@ uint32_t SFE_UBLOX_GNSS::getUnixEpoch(uint32_t& microsecond, uint16_t maxWait)
   packetUBXNAVPVT->moduleQueried.moduleQueried1.bits.nano = false;
   packetUBXNAVPVT->moduleQueried.moduleQueried1.bits.all = false;
   // assemble time elements into time_t - credits to Thomas Roell @ https://github.com/GrumpyOldPizza
-  uint32_t t = ((((((((uint32_t)packetUBXNAVPVT->data.year - 1970) * 365) + ((((uint32_t)packetUBXNAVPVT->data.year - 1970) + 3) / 4)) + 
+  uint32_t t = ((((((((uint32_t)packetUBXNAVPVT->data.year - 1970) * 365) + ((((uint32_t)packetUBXNAVPVT->data.year - 1970) + 3) / 4)) +
                             DAYS_SINCE_MONTH[((uint32_t)packetUBXNAVPVT->data.year - 1970) & 3][(uint32_t)packetUBXNAVPVT->data.month] +
                           ((uint32_t)packetUBXNAVPVT->data.day - 1)) * 24 +
                         (uint32_t)packetUBXNAVPVT->data.hour) * 60 +
@@ -9779,6 +9923,21 @@ bool SFE_UBLOX_GNSS::getTimeValid(uint16_t maxWait)
   packetUBXNAVPVT->moduleQueried.moduleQueried1.bits.all = false;
   return ((bool)packetUBXNAVPVT->data.valid.bits.validTime);
 }
+
+//Check to see if the UTC time has been fully resolved
+bool SFE_UBLOX_GNSS::getTimeFullyResolved(uint16_t maxWait)
+{
+  if (packetUBXNAVPVT == NULL) initPacketUBXNAVPVT(); //Check that RAM has been allocated for the PVT data
+  if (packetUBXNAVPVT == NULL) //Bail if the RAM allocation failed
+    return (false);
+
+  if (packetUBXNAVPVT->moduleQueried.moduleQueried1.bits.fullyResolved == false)
+    getPVT(maxWait);
+  packetUBXNAVPVT->moduleQueried.moduleQueried1.bits.fullyResolved = false; //Since we are about to give this to user, mark this data as stale
+  packetUBXNAVPVT->moduleQueried.moduleQueried1.bits.all = false;
+  return ((bool)packetUBXNAVPVT->data.valid.bits.fullyResolved);
+}
+
 
 //Get the confirmed date validity
 bool SFE_UBLOX_GNSS:: getConfirmedDate(uint16_t maxWait)
@@ -10141,7 +10300,7 @@ uint16_t SFE_UBLOX_GNSS::getMagAcc(uint16_t maxWait)
 }
 
 // getGeoidSeparation is currently redundant. The geoid separation seems to only be provided in NMEA GGA and GNS messages.
-int32_t SFE_UBLOX_GNSS::getGeoidSeparation(uint16_t maxWait)
+int32_t SFE_UBLOX_GNSS::getGeoidSeparation(uint16_t maxWait) // IGNORE COMPILER WARNING unused parameter 'maxWait'
 {
   return (0);
 }
@@ -10395,7 +10554,7 @@ uint8_t SFE_UBLOX_GNSS::getLeapIndicator(int32_t& timeToLsEvent, uint16_t maxWai
     getLeapSecondEvent(maxWait);
   packetUBXNAVTIMELS->moduleQueried.moduleQueried.bits.validTimeToLsEvent = false; //Since we are about to give this to user, mark this data as stale
   packetUBXNAVTIMELS->moduleQueried.moduleQueried.bits.lsChange = false;
-  packetUBXNAVTIMELS->moduleQueried.moduleQueried.bits.timeToLsEvent = false;  
+  packetUBXNAVTIMELS->moduleQueried.moduleQueried.bits.timeToLsEvent = false;
   packetUBXNAVTIMELS->moduleQueried.moduleQueried.bits.all = false;
   timeToLsEvent = packetUBXNAVTIMELS->data.timeToLsEvent;
   // returns NTP Leap Indicator
